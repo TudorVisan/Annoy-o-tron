@@ -5919,70 +5919,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="buzzer">
-<description>&lt;b&gt;Speakers and Buzzers&lt;/b&gt;&lt;p&gt;
-&lt;ul&gt;Distributors:
-&lt;li&gt;Buerklin
-&lt;li&gt;Spoerle
-&lt;li&gt;Schukat
-&lt;/ul&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="AL11P">
-<description>&lt;b&gt;SPEAKER&lt;/b&gt;</description>
-<circle x="0" y="0" radius="5.715" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="6.223" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="1.016" width="0.1524" layer="21"/>
-<pad name="-" x="-2.286" y="0" drill="1.016" diameter="1.905" shape="octagon"/>
-<pad name="+" x="2.286" y="0" drill="1.016" diameter="1.905" shape="octagon"/>
-<text x="-3.175" y="6.35" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.81" y="-3.175" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="SP">
-<wire x1="-1.905" y1="-0.635" x2="1.905" y2="-0.635" width="0.254" layer="94"/>
-<wire x1="1.905" y1="-0.635" x2="1.905" y2="0" width="0.254" layer="94"/>
-<wire x1="1.905" y1="2.54" x2="-1.905" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-1.905" y1="-0.635" x2="-1.905" y2="0" width="0.254" layer="94"/>
-<wire x1="1.905" y1="2.54" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-1.905" y1="2.54" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="1.905" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.905" y1="0" x2="1.905" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.905" y1="0" x2="-1.905" y2="2.54" width="0.254" layer="94"/>
-<text x="-3.81" y="6.35" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="AL11P" prefix="SP">
-<description>&lt;b&gt;SPEAKER&lt;/b&gt;&lt;p&gt; Source: Buerklin</description>
-<gates>
-<gate name="G$1" symbol="SP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="AL11P">
-<connects>
-<connect gate="G$1" pin="1" pad="-"/>
-<connect gate="G$1" pin="2" pad="+"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="resistor">
 <description>&lt;b&gt;Resistors, Capacitors, Inductors&lt;/b&gt;&lt;p&gt;
 Based on the previous libraries:
@@ -16942,7 +16878,6 @@ Based on the following sources:&lt;p&gt;
 </class>
 </classes>
 <parts>
-<part name="SP1" library="buzzer" deviceset="AL11P" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="Q1" library="crystal" deviceset="CRYSTAL" device="HC49S" value="8MHz"/>
@@ -16988,20 +16923,20 @@ Based on the following sources:&lt;p&gt;
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="JP3" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="JP4" library="pinhead" deviceset="PINHD-1X2" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="SP1" gate="G$1" x="370.84" y="467.36"/>
-<instance part="GND5" gate="1" x="358.14" y="441.96"/>
+<instance part="GND5" gate="1" x="386.08" y="439.42"/>
 <instance part="R1" gate="G$1" x="180.34" y="114.3" rot="R90"/>
 <instance part="Q1" gate="G$1" x="408.94" y="99.06" rot="R90"/>
 <instance part="C5" gate="G$1" x="396.24" y="88.9" rot="R90"/>
 <instance part="C6" gate="G$1" x="396.24" y="109.22" rot="R90"/>
 <instance part="GND6" gate="1" x="386.08" y="78.74"/>
-<instance part="C13" gate="G$1" x="358.14" y="457.2" rot="MR0"/>
+<instance part="C13" gate="G$1" x="386.08" y="454.66" rot="MR0"/>
 <instance part="JP1" gate="G$1" x="45.72" y="292.1" rot="R180"/>
 <instance part="J2" gate="G$1" x="109.22" y="454.66"/>
 <instance part="JP2" gate="G$1" x="403.86" y="274.32"/>
@@ -17040,6 +16975,7 @@ Based on the following sources:&lt;p&gt;
 <instance part="P+7" gate="VCC" x="431.8" y="477.52"/>
 <instance part="GND7" gate="1" x="431.8" y="436.88"/>
 <instance part="JP3" gate="G$1" x="416.56" y="467.36" rot="R180"/>
+<instance part="JP4" gate="G$1" x="370.84" y="467.36" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -17122,15 +17058,15 @@ Based on the following sources:&lt;p&gt;
 <label x="152.4" y="464.82" size="1.778" layer="95" font="vector" rot="R180"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="A"/>
-<wire x1="124.46" y1="439.42" x2="132.08" y2="439.42" width="0.1524" layer="91"/>
-<label x="132.08" y="439.42" size="1.778" layer="95" font="vector"/>
+<pinref part="J2" gate="G$1" pin="B"/>
+<wire x1="124.46" y1="436.88" x2="132.08" y2="436.88" width="0.1524" layer="91"/>
+<label x="132.08" y="436.88" size="1.778" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="358.14" y1="444.5" x2="358.14" y2="452.12" width="0.1524" layer="91"/>
+<wire x1="386.08" y1="441.96" x2="386.08" y2="449.58" width="0.1524" layer="91"/>
 <pinref part="C13" gate="G$1" pin="-"/>
 </segment>
 <segment>
@@ -17354,14 +17290,14 @@ Based on the following sources:&lt;p&gt;
 </net>
 <net name="SPKR" class="0">
 <segment>
-<pinref part="SP1" gate="G$1" pin="2"/>
-<wire x1="383.54" y1="467.36" x2="375.92" y2="467.36" width="0.1524" layer="91"/>
-<label x="383.54" y="467.36" size="1.778" layer="95"/>
+<label x="386.08" y="467.36" size="1.778" layer="95"/>
+<pinref part="JP4" gate="G$1" pin="2"/>
+<wire x1="386.08" y1="467.36" x2="373.38" y2="467.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U3" gate="A" pin="PB1"/>
-<wire x1="137.16" y1="91.44" x2="129.54" y2="91.44" width="0.1524" layer="91"/>
-<label x="129.54" y="91.44" size="1.778" layer="95" font="vector" rot="R180"/>
+<pinref part="U3" gate="A" pin="PB0"/>
+<wire x1="137.16" y1="93.98" x2="129.54" y2="93.98" width="0.1524" layer="91"/>
+<label x="129.54" y="93.98" size="1.778" layer="95" font="vector" rot="R180"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -17446,28 +17382,28 @@ Based on the following sources:&lt;p&gt;
 </net>
 <net name="INS" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="B"/>
-<wire x1="124.46" y1="436.88" x2="132.08" y2="436.88" width="0.1524" layer="91"/>
-<label x="132.08" y="436.88" size="1.778" layer="95" font="vector"/>
-</segment>
-<segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="160.02" y1="454.66" x2="160.02" y2="462.28" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="462.28" x2="152.4" y2="462.28" width="0.1524" layer="91"/>
 <label x="152.4" y="462.28" size="1.778" layer="95" font="vector" rot="R180"/>
 </segment>
 <segment>
-<pinref part="U3" gate="A" pin="PB0"/>
-<wire x1="137.16" y1="93.98" x2="129.54" y2="93.98" width="0.1524" layer="91"/>
-<label x="129.54" y="93.98" size="1.778" layer="95" font="vector" rot="R180"/>
+<pinref part="J2" gate="G$1" pin="A"/>
+<wire x1="124.46" y1="439.42" x2="132.08" y2="439.42" width="0.1524" layer="91"/>
+<label x="132.08" y="439.42" size="1.778" layer="95" font="vector"/>
+</segment>
+<segment>
+<pinref part="U3" gate="A" pin="PB1"/>
+<wire x1="137.16" y1="91.44" x2="129.54" y2="91.44" width="0.1524" layer="91"/>
+<label x="129.54" y="91.44" size="1.778" layer="95" font="vector" rot="R180"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="C13" gate="G$1" pin="+"/>
-<pinref part="SP1" gate="G$1" pin="1"/>
-<wire x1="358.14" y1="459.74" x2="358.14" y2="467.36" width="0.1524" layer="91"/>
-<wire x1="358.14" y1="467.36" x2="365.76" y2="467.36" width="0.1524" layer="91"/>
+<pinref part="JP4" gate="G$1" pin="1"/>
+<wire x1="386.08" y1="457.2" x2="386.08" y2="464.82" width="0.1524" layer="91"/>
+<wire x1="386.08" y1="464.82" x2="373.38" y2="464.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -17490,6 +17426,7 @@ Based on the following sources:&lt;p&gt;
 <approved hash="113,1,130.071,450.111,FRAME5,,,,,"/>
 <approved hash="113,1,391.691,450.111,FRAME6,,,,,"/>
 <approved hash="113,1,418.863,464.689,JP3,,,,,"/>
+<approved hash="113,1,373.143,464.689,JP4,,,,,"/>
 </errors>
 </schematic>
 </drawing>
