@@ -1,6 +1,6 @@
 Partlist
 
-Exported from annoy-o-tron.sch at 02/12/2016 10:35
+Exported from annoy-o-tron.sch at 02/12/2016 11:10
 
 EAGLE Version 7.7.0 Copyright (c) 1988-2016 CadSoft
 
@@ -8,21 +8,21 @@ Assembly variant:
 
 Part     Value          Device             Package               Library        Sheet
 
-C1       100nF          C-EUC0805          C0805                 rcl            1
-C2       100nF          C-EUC0805          C0805                 rcl            1
-C3       100nF          C-EUC0805          C0805                 rcl            1
-C4       100nF          C-EUC0805          C0805                 rcl            1
+C1       100nF          C-EUC0805K         C0805K                rcl            1
+C2       100nF          C-EUC0805K         C0805K                rcl            1
+C3       100nF          C-EUC0805K         C0805K                rcl            1
+C4       100nF          C-EUC0805K         C0805K                rcl            1
 C5       15pF           C-EUC0805K         C0805K                rcl            1
-C6       15pF           C-EUC0805K         C0805K                resistor       1
-C7       10uF           C-EUC0805K         C0805K                resistor       1
-C8       100nF          C-EUC0805K         C0805K                resistor       1
-C9       100nF          C-EUC0805K         C0805K                resistor       1
-C10      10uF           C-EUC0805K         C0805K                resistor       1
-C11      1uF            C-EUC0805K         C0805K                resistor       1
-C12      100nF          C-EUC0805K         C0805K                resistor       1
-C13      100uF          CPOL-EU153CLV-0405 153CLV-0405           resistor       1
+C6       15pF           C-EUC0805K         C0805K                rcl            1
+C7       10uF           C-EUC0805K         C0805K                rcl            1
+C8       100nF          C-EUC0805K         C0805K                rcl            1
+C9       100nF          C-EUC0805K         C0805K                rcl            1
+C10      10uF           C-EUC0805K         C0805K                rcl            1
+C11      1uF            C-EUC0805K         C0805K                rcl            1
+C12      100nF          C-EUC0805K         C0805K                rcl            1
+C13      100uF          CPOL-EU153CLV-0405 153CLV-0405           rcl            1
 IC1      TPS61201       TPS61201           S-PDSO-N10            texas          1
-J2       DM3AT-SF-PEJM5 DM3AT-SF-PEJM5     DM3AT-SF-PEJM5        DM3AT-SF-PEJM5 1
+J1       DM3AT-SF-PEJM5 DM3AT-SF-PEJM5     DM3AT-SF-PEJM5        DM3AT-SF-PEJM5 1
 JP1                     PINHD-1X2          1X02                  pinhead        1
 JP2      AVR-ISP-6VERT  AVR-ISP-6VERT      AVR-ISP-6             avr-7          1
 JP3                     PINHD-1X2          1X02                  pinhead        1
@@ -32,4 +32,4 @@ Q1       8MHz           CRYSTALHC49S       HC49/S                crystal        
 R1       10k            R-EU_R0805         R0805                 rcl            1
 R2       10k            R-EU_R0805         R0805                 rcl            1
 R3       10k            R-EU_R0805         R0805                 rcl            1
-U3       ATMEGA328P-AU  ATMEGA328P-AU      QFP80P900X900X120-32N tudor          1
+U1       ATMEGA328P-AU  ATMEGA328P-AU      QFP80P900X900X120-32N tudor          1
